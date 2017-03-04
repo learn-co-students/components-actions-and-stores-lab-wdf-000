@@ -41,7 +41,7 @@ export default class BandInput extends React.Component {
   }
 
   handleBandShow(){
-    return this.props.store !== undefined ? this.props.store.getState().map((band, i) => <BandIndex key={i} band={band} />) : undefined
+    return this.props.store.getState().map((band, i) => <BandIndex key={i} band={band} />) 
   }
 
   onSubmit(event){
